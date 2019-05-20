@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var newHolder = ["cat", "dog", "rabbit", "bird"];
+        // var posIndex = newHolder.indexOf("rifle");
+        // console.log(posIndex);
+
+        //let's look for something in the array
+        var q = prompt("what did you want to look for?")
+        var p = newHolder.indexOf(q);
+        
+        var message = p > -1 ? "Found.":"Not found. Asshole!"
+        console.log(message);
+
+        console.log(newHolder.slice(3,4));
+        
+    </script>
+</body>
+</html>

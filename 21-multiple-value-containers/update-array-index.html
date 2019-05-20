@@ -23,7 +23,12 @@
         newHolder.pop();
         //reverse order
         newHolder.reverse();
-        
+        //expand array to 10 slots and add "horse"
+        newHolder[10] = "horse";
+        //add "fish"to 7 slots between "horse" and "sheep"
+        newHolder.fill("fish",3,10);
+        //reverse order
+        newHolder.reverse();
 
 
 

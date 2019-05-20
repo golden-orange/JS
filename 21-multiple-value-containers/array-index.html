@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        beatles = ["John","Paul","George","Ringo"];
+        
+        beatlesFirst = beatles[0]
+        beatlesLast = beatles[beatles.length-1]
+        
+        beatles.forEach(function(item, index, array) {
+            console.log(item, index);
+        });
+    
+
+        var newBeatles = beatles.push("Eddy");
+    </script>
+</body>
+</html>
