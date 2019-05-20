@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //select an animal at random
+        var animals = ["chicken","duck","penguin","horse","goat","fish"];
+        var randomNumber = Math.floor(Math.random()*animals.length);//create a random number, based on animals array
+        console.log(animals);
+        console.log(randomNumber);
+        console.log(animals[randomNumber]);//insert random number into animals array to select the corresponding animal in the array
+        var randomAnimal = animals[randomNumber];
+        var message = prompt("which index value is "+randomAnimal+"?");
+        var response = (randomAnimal == message) ? "Correct":"Not Correct! Asshole!"; //check response with correct answer
+        alert(response);
+
+        //modify array in reverse order, beginning with penguin
+        var sortedAnimals = animals.sort();
+        console.log(sortedAnimals);
+        console.log(sortedAnimals.reverse())
+        //or use dot notation to chain methods together:
+        console.log(animals.sort().reverse());
+
+
+        //use "fill" method to fill in empty array items:
+        animals[20] = "monkey";
+        // animals.fill("walrus",1,6).fill("red bull",15,17);
+        console.log(animals.sort().reverse());
+
+        //make the number to begin fill dynamic, based on the number of items in the array
+        var startHere = animals.length;
+        console.log(animals.fill("the donald",0,startHere));
+        
+    </script>
+</body>
+</html>

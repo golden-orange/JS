@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var newHolder = ["cat","dog","rabbit","bird"];
+        console.log(newHolder);
+
+        //add to newHolder array so it looks like the following: 
+        //("Horse","Fish","Fish","Fish","Fish","Fish","Fish","Fish","rabbit","dog","sheep")
+
+        //remove cat using shift
+        newHolder.shift();
+        //add "sheep" to first
+        newHolder.unshift("sheep");
+        //remove "bird"
+        newHolder.pop();
+        //reverse order
+        newHolder.reverse();
+        
+
+
+
+
+
+        //move "rabbit","dog","sheep" to end of array
+        // console.log(newHolder.length-1);
+        //add "horse" to first
+        // newHolder.unshift("horse");
+        //add 7 new places and then add 7 "fish", beginning in 2nd location
+        // newHolder[11] = "fish";
+        //remove last "fish"
+        // newHolder.pop();
+        // newHolder.fill("fish",1,7);
+        //place fish at the beginning
+        // newHolder.reverse(3,1);
+
+
+
+
+        console.log(newHolder);
+    </script>
+</body>
+</html>
